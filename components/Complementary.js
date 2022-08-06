@@ -1,8 +1,8 @@
 export default function Complementary () {
     return (
         <>
-            <div className='flex flex-1 w-auto justify-center' >
-                <ul className='flex self-center columns-4'>
+            <div className='flex flex-row-reverse drop-shadow-sm w-full h-14 bg-white' >
+                <ul className='flex ml-5 mr-5 columns-4'>
                     <li className='flex justify-center items-center mx-1  w-10 h-10 self-center rounded-full cursor-pointer bg-slate-200 hover:bg-slate-300'>
                         <svg fill="currentColor" viewBox="0 0 44 44" width="1em" height="1em" className="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 rs22bh7c jnigpg78 odw8uiq3"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg>
                     </li>

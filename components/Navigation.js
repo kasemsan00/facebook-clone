@@ -3,12 +3,12 @@ import Image from 'next/image'
 export default function Navigation () {
     return (
         <>
-            <div className='flex flex-1 justify-center drop-shadow-sm bg-white ' >
-                <div className='flex self-center w-auto cursor-pointer '>
+            <div className='flex drop-shadow-sm w-full h-14 bg-white' >
+                <div className='flex self-center ml-5 mr-2 w-auto cursor-pointer '>
                     <Image width={40} height={40} src={require('../assets/facebook-logo.png')} />
                 </div>
                 <input 
-                    className='w-6/12 text-base p-2 px-2 rounded-full border-ra m-2 bg-gray-100'
+                    className='w-6/12 text-base pl-3 pr-3 focus:outline-none rounded-full border-ra m-2 bg-gray-100'
                     type='text' 
                     placeholder='Search Facebook'
                 />

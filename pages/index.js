@@ -6,14 +6,17 @@ import Complementary from '../components/Complementary'
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>Facebook Clone</title>
+			</Head>
 			<div className='flex flex-1' >
 				<div className='flex flex-1 flex-col bg-gray-100 '>
 					<Navigation/>
 				</div>
-				<div className='flex flex-1 flex-col bg-red-300'>
+				<div className='flex flex-1 flex-col bg-gray-100'>
 					<Content/>
 				</div>
-				<div className='flex flex-1 bg-yellow-50'>
+				<div className='flex flex-1 bg-gray-100'>
 					<Complementary/>
 				</div>
 			</div>
