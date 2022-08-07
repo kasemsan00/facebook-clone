@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Content from '../components/Content'
-import Navigation from '../components/Navigation'
-import Complementary from '../components/Complementary'
+import Content from '../src/components/Content'
+import Navigation from '../src/components/Navigation'
+import Complementary from '../src/components/Complementary'
 
 export default function Home() {
 	return (

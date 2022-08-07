@@ -5,7 +5,7 @@ export default function Navigation () {
         <>
             <div className='flex drop-shadow-sm w-full h-14 bg-white' >
                 <div className='flex self-center ml-5 mr-2 w-auto cursor-pointer '>
-                    <Image width={40} height={40} src={require('../assets/facebook-logo.png')} />
+                    <Image width={40} height={40} alt='logo' src={require('../assets/facebook-logo.png')} />
                 </div>
                 <input 
                     className='w-6/12 text-base pl-3 pr-3 focus:outline-none rounded-full border-ra m-2 bg-gray-100'
@@ -21,6 +21,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/user.png')} 
+                                alt='user'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>
@@ -33,6 +34,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/friends.png')} 
+                                alt='frined'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>
@@ -45,6 +47,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/connection.png')} 
+                                alt='connection'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>
@@ -57,6 +60,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/store.png')} 
+                                alt='store'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>
@@ -69,6 +73,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/video-marketing.png')} 
+                                alt='market'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>
@@ -81,6 +86,7 @@ export default function Navigation () {
                                 width={30}
                                 height={30}
                                 src={require('../assets/more-or-less.png')} 
+                                alt='more-or-less'
                             />
                         </div>
                         <div className='flex flex-1 self-center font-medium text-sm'>

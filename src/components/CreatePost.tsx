@@ -9,13 +9,13 @@ export default function CreatePost () {
         <>
             <div className="flex h-14 bg-white rounded-xl drop-shadow-sm">
                 <div className='flex self-center m-3' >
-                    <Image className='justify-center rounded-full w-20' src={require('../assets/display.jpg')} />
+                    <Image className='justify-center rounded-full w-20' alt='display' src={require('../assets/display.jpg')} />
                 </div>
                 <div 
                     className='flex flex-1 self-center text-lg cursor-pointer h-10 items-center font-light text-gray-500 pl-3 pr-3 m-1 rounded-3xl w-full focus:outline-none bg-slate-100' 
                     onClick={()=>setShowCreatePost(true)}
                 >
-                    What's on your mind, Kasemsan?
+                    What&apos;s on your mind, Kasemsan?
                 </div>
             </div>
             <div className={`fixed inset-1/3 flex-1 flex-col rounded-xl items-center bg-white drop-shadow-xl ${!showCreatePost? `hidden`:``}`} >
@@ -30,7 +30,7 @@ export default function CreatePost () {
                 </div>
                 <div className="flex w-full border-solid border-t border-gray-200">
                     <div className='flex self-center m-3 w-16' >
-                        <Image className='justify-center rounded-full w-20' src={require('../assets/display.jpg')} />
+                        <Image className='justify-center rounded-full w-20' alt='display' src={require('../assets/display.jpg')} />
                     </div>
                     <div className="flex flex-col justify-center w-full">
                         <div className="flex text-xs font-medium mb-1">
