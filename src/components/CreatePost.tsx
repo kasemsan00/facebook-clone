@@ -1,5 +1,11 @@
 import Image from "next/image"
 import { useState } from "react"
+import CollectionsIcon from '@mui/icons-material/Collections';
+import PersonIcon from '@mui/icons-material/Person';
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 export default function CreatePost () {
 
@@ -18,7 +24,7 @@ export default function CreatePost () {
                     What&apos;s on your mind, Kasemsan?
                 </div>
             </div>
-            <div className={`fixed inset-1/3 flex-1 flex-col rounded-xl items-center bg-white drop-shadow-xl ${!showCreatePost? `hidden`:``}`} >
+            <div className={`fixed flex-1 flex-col rounded-xl items-center bg-white drop-shadow-xl ${!showCreatePost? `hidden`:``}`} >
                 <div className="flex items-center my-3 justify-center self-center font-bold text-sm">
                     Create Post
                     <div 
@@ -41,13 +47,29 @@ export default function CreatePost () {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full ">
+                <div className="flex flex-col overflow-hidden w-full ">
                     <textarea 
-                        className="mx-3 px-2  w-full resize-none focus:outline-none" 
+                        className="mx-3 px-2 text-2xl w-full resize-none focus:outline-none" 
                         placeholder="What's on your mind Kasemsan?" 
                         rows={4}
                     >
                     </textarea>
+                    <div className="flex m-4 flex-1 border-solid border-gray border-2 rounded-md px-3 py-3 drop-shadow-sm font-medium">
+                        <div className="flex w-full justify-start ">
+                            Add to your post
+                        </div>
+                        <div className="flex w-full justify-end ">
+                            <CollectionsIcon className="mr-1 ml-1" />
+                            <PersonIcon className="mr-1 ml-1" />
+                            <InsertEmoticonIcon className="mr-1 ml-1"/>
+                            <FmdGoodIcon className="mr-1 ml-1"/>
+                            <AssistantPhotoIcon className="mr-1 ml-1"/>
+                            <MoreHorizIcon className="mr-1 ml-1"/>
+                        </div>
+                    </div>
+                    <div className="flex flex-1 ml-4 mr-4 justify-center border-solid border-gray border-2 rounded-md px-2 py-2 font-medium bg-slate-200">
+                        <button>Post</button>
+                    </div>
                 </div>
             </div>
         </>
